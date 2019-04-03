@@ -14,7 +14,7 @@ public class AngloTrainer {
     private TreeSet dictTree = new TreeSet();
     private int longestWord;
     private String randomLetters;
-    private boolean running;
+    private int running;
 
     public AngloTrainer(String dictionaryFile) throws IOException {
         // ... define!
@@ -29,35 +29,31 @@ public class AngloTrainer {
     private void runGame()
     {
         Scanner sc = new Scanner(System.in);
-        running = true;
+        running = 1;
         String answer="";
-        while (running)
+        while (running ==1)
         {
             System.out.println("Enter your word: ");
             try {
-                long deltaTime;
-                long time;
                 answer = sc.nextLine();
-                time = System.nanoTime();
-                //My solition
-                running = validate(answer);
-                deltaTime= System.nanoTime()-time;
-                System.out.println("Time for validation 1: " +deltaTime);
 
-                //Solution with includes
-                time = System.nanoTime();
-                running = validate2(answer);
-                deltaTime= System.nanoTime()-time;
-                System.out.println("Time for validation 2: " +deltaTime);
-                if(running)
+                running = validate3(answer);
+                if(running==1)
                     System.out.println("Gratz! your word fits");
-                else
+                else if(running == -1)
+                {
+                    System.out.println("You have used a latter too many times...");
+                }
+
+                else if(running == -2)
+                {
                     System.out.println("Your suggestion was not found in the dictionary.\n" +
                             "I found: ");
+                }
             }
             catch (Exception e)
             {
-                running=false;
+                running=-3;
             }
 
         }
@@ -99,6 +95,15 @@ public class AngloTrainer {
         if(includes(sort(randomLetters),sort(answer))&&dictTree.contains(answer))
             return true;
         return false;
+
+    }
+    private int validate3(String answer)
+    {
+        if(!includes(sort(randomLetters),sort(answer)))
+            return -1;
+        if(!dictTree.contains(answer))
+            return -2;
+        return 1;
 
     }
 

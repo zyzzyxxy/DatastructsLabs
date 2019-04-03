@@ -12,11 +12,20 @@ public class WordLists {
     private File file;
     private ArrayList<String> wordList;
     private Set<String> wordSet;
+    private Comparator<String> backwardsComparator = new Comparator<String>() {
+        @Override
+        public int compare(String o1, String o2) {
+            return o1.substring(o1.length()-1).compareTo(o2.substring(o2.length()-1));
+        }
+    };
 
     public WordLists(String inputFileName) throws IOException {
         this.inputFileName = inputFileName;
         file = new File(inputFileName);
         System.out.println("Loaded: " + inputFileName);
+        wordList = new ArrayList<>();
+        wordSet = new TreeSet<>();
+        makeWordListAndSet();
 
     }
 
@@ -56,24 +65,25 @@ public class WordLists {
 
     private String reverse(String s) {
         String result = "";
-        for(int i = 0; i<s.length();i++)
-            result+=s.substring(s.length()-(i+1),s.length()-i);
+        for (int i = 0; i < s.length(); i++)
+            result += s.substring(s.length() - (i + 1), s.length() - i);
 
         return result;
     }
 
-    private void computeWordFrequencies() throws IOException {
-        System.out.println("\n-------Alpha and Frequencis--------\n");
-        freqMap = new HashMap<>();
+    private void makeWordListAndSet() throws IOException {
         in = new BufferedReader(new FileReader(file));
         String word = "";
-        wordList = new ArrayList<>();
-        wordSet = new TreeSet<>();
         while (in.ready()) {
             String s = getWord();
             wordList.add(s);
             wordSet.add(s);
         }
+    }
+    private void computeWordFrequencies() throws IOException {
+        System.out.println("\n-------Alpha and Frequencis--------\n");
+        freqMap = new HashMap<>();
+
 
         for (String s : wordList) {
             if (freqMap.containsKey(s)) {
@@ -84,82 +94,100 @@ public class WordLists {
                 freqMap.put(s, 1);
             }
         }
-        FileWriter fw = new FileWriter(new File("alfaSorted.txt"));
+        PrintWriter printWriter = new PrintWriter("alfaSorted.txt");
         for (String s : wordSet) {
-            fw.write(s + "\n");
-           // System.out.println(s + "  " + " 	" + freqMap.get(s));
+            printWriter.println(s);
         }
-        fw.close();
+        printWriter.close();
 
 
     }
 
-    private int getMaxFromMap()
-    {
+    private int getMaxFromMap() {
         int result = 0;
-        for (String s:wordSet) {
-            if (freqMap.get(s)>result)
+        for (String s : wordSet) {
+            if (freqMap.get(s) > result)
                 result = freqMap.get(s);
         }
         return result;
+    }
+
+    public class backwardsComparator implements Comparator<String>{
+
+        @Override
+        public int compare(String o1, String o2) {
+            o1 = reverse(o1); o2 = reverse(o2);
+            if(o1.compareTo(o2)>0)
+                return 1;
+            else if (o1.compareTo(o2)==0)
+                return 0;
+            else
+                return -1;
+        }
     }
 
     private void computeFrequencyMap() throws IOException {
 
         System.out.println("\n-------Sorted by Frequency--------\n");
 
+        for (int i:freqMap.values())
+        {
+
+        }
+
+        TreeMap<String,Integer> sortMap = new TreeMap<String, Integer>();
+        sortMap.comparator();
+
         //Getting max value
         int i = getMaxFromMap();
         int start = i;
-        System.out.println(freqMap.values());
         Set tempSet = new TreeSet();
-        for (int j:freqMap.values())
-        {
+        for (int j : freqMap.values()) {
             tempSet.add(j);
         }
         tempSet = ((TreeSet) tempSet).descendingSet();
         System.out.println(tempSet.toString());
-                ;
+        ;
         HashMap<Integer, ArrayList<String>> map = new HashMap<>();
-        while (i>0)
-        {
+        while (i > 0) {
             ArrayList<String> tempList = new ArrayList<>();
-            for (String s : wordSet)
-                {
+            for (String s : wordSet) {
                 if (freqMap.get(s) == i)
-                  tempList.add(s);
-                }
-            if(!tempList.isEmpty())
+                    tempList.add(s);
+            }
+            if (!tempList.isEmpty())
                 map.put(i, tempList);
             i--;
         }
-        FileWriter fw = new FileWriter(new File("frequencySorted.txt"));
-        while (start>0)
-        {
-            if(map.containsKey(start)) {
-                fw.write(start + ":" + "\n");
+        PrintWriter printWriter = new PrintWriter(new File("frequencySorted.txt"));
+        while (start > 0) {
+            if (map.containsKey(start)) {
+                printWriter.println(start + ":");
                 for (String s : map.get(start)) {
-                    fw.write("    " + s + "\n");
+                    printWriter.println("    " + s);
                 }
             }
             start--;
         }
-        fw.close();
+        printWriter.close();
     }
 
 
     private void computeBackwardsOrder() throws IOException {
         System.out.println("\n-------Backwards--------\n");
+
         ArrayList<String> backWardList = new ArrayList<>();
-        FileWriter fw= new FileWriter(new File("backwardsSorted.txt"));
-        for (String s:wordSet) {
-            backWardList.add(reverse(s));
+        PrintWriter printWriter = new PrintWriter(new File("backwardsSorted.txt"));
+        for (String s : wordSet) {
+            backWardList.add(s);
         }
-        Collections.sort(backWardList);
-        for (String s:backWardList) {
-            fw.write(reverse(s) + "\n");
+
+        Collections.sort(backWardList, new backwardsComparator());
+
+        for (String s : backWardList) {
+            printWriter.println(s);
         }
-        fw.close();
+        printWriter.close();
 
     }
 
