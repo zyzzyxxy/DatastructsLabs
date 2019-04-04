@@ -90,9 +90,9 @@ public class Main {
 
 
          System.out.println("----- IsEven -----");
-         Collection<Integer> l2 = filter2(new IsEven(), l1);
+         Collection<Integer> l2 = filter(new IsEven(), l1);
          // Lamdbda testing
-         l2 = filter2(x -> x%2==0, l1);
+         l2 = filter(x -> x%2==0, l1);
          //List<Integer>l3 = filter2(new IsEven(), l1);
 
          print(l2); // [-42,88,0,18]
@@ -100,17 +100,22 @@ public class Main {
 
 
 
-          /*
+
          ArrayList<Person> pl = new ArrayList<>();
          pl.add(new Person("Nisse","nisse@hipnet.moc","male",23));
          pl.add(new Person("Lisa","lisa@shipnet.sea","female",67));
          pl.add(new Person("Ada","ada@jahuu.vanu","female",49));
          pl.add(new Person("Kal","karl@gotnet.vg","male",78));
          pl.add(new Person("Beda","beda@fishnet.cod","female",102));
-        */
+
          // Assignment 6: Write code using lambdas here
          BiFunction<Integer,Integer,Integer> plus = (x,y) -> x+y;
          System.out.println(plus.apply(1,2));
+
+         Collection<Person> pResult = filter(x -> ((Person)x).getAge()>65&&((Person)x).getGender().equals("female"),pl);
+         Collection<String> eMails = map(x -> ((Person)x).getEmail(), pResult);
+         print(eMails);
+
 
 
     }
