@@ -54,8 +54,7 @@ public class CollectionOps {
 
 
     // Example
-    public static <T,R> Collection<R>
-    map(Function<T,R> f,Collection<T> c) 
+    public static <T,R> Collection<R> map(Function<T,R> f,Collection<T> c)
     {
         // Determine the dynamic type of the collection
         Class<? extends Collection> cls = c.getClass();
@@ -75,5 +74,47 @@ public class CollectionOps {
     }
     
     // Put your code for filter here ...
+    public static <T,R> Collection<R> filter(Predicate<R> f, Collection<T> c)
+    {
+        // Determine the dynamic type of the collection
+        Class<? extends Collection> cls = c.getClass();
+        try {
+            // Create an object of the same dynamic type as c
+            Collection<R> result = (Collection<R>)cls.newInstance();
+            // type.cast(type.newInstance());
+            // Copy the elements and apply op to them
+            for ( T x : c )
+            {
+                if(f.test((R)x))
+                result.add((R) x);
+            }
+            return result;
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public static <T> Collection<T> filter2(Predicate<T> f,Collection<T> c)
+    {
+        // Determine the dynamic type of the collection
+        Class<? extends Collection> cls = c.getClass();
+        try {
+            // Create an object of the same dynamic type as c
+            Collection<T> result = (Collection<T>)cls.newInstance();
+            // type.cast(type.newInstance());
+            // Copy the elements and apply op to them
+            for ( T x : c )
+            {
+                if(f.test(x))
+                    result.add(x);
+            }
+            return result;
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
 }

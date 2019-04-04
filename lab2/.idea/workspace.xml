@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300f180c-a569-442e-9ccf-4fdb570cc220" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SingleBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../calcFreq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calcFreq/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/AngloTrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/AngloTrainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/WordLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/WordLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/AngloTrainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/AngloTrainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/WordLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/WordLists.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/backwardsSorted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1 (1)/out/production/lab1 (1)/backwardsSorted.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollectionOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/CollectionOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSingleBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestSingleBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Main.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/BiFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IsEven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection/CollectionOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/CollectionOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/collection/CollectionOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/collection/CollectionOps.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collection/CollectionOps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+            <state relative-caret-position="-64">
+              <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -51,10 +46,69 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="88">
+              <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3086#3095#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BiFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IsEven.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding>
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Predicate.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Function.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+              <folding>
+                <element signature="e#128#129#0" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,8 +141,13 @@
         <option value="$PROJECT_DIR$/TestSingleBuffer.java" />
         <option value="$PROJECT_DIR$/CollectionOps.java" />
         <option value="$PROJECT_DIR$/SingleBuffer.java" />
-        <option value="$PROJECT_DIR$/Main.java" />
+        <option value="$PROJECT_DIR$/Function.java" />
+        <option value="$PROJECT_DIR$/Preticate.java" />
+        <option value="$PROJECT_DIR$/Predicate.java" />
+        <option value="$PROJECT_DIR$/IsEven.java" />
         <option value="$PROJECT_DIR$/collection/CollectionOps.java" />
+        <option value="$PROJECT_DIR$/BiFunction.java" />
+        <option value="$PROJECT_DIR$/Main.java" />
       </list>
     </option>
   </component>
@@ -124,7 +183,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554290271063" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554376132792" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -185,7 +244,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1408" height="878" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -193,7 +251,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="simpleUML" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -201,7 +259,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32951653" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32951653" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34351146" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34351146" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994911" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -229,16 +287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SingleBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -246,10 +294,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/Function">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IsEven2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IsEven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/collection/CollectionOps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+        <state relative-caret-position="-64">
+          <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BiFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3086#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -76,8 +76,30 @@ public class Main {
 
 
          // Assignment 5: Write code to test map here
-             
+         double[] d = {23.4, -19.0, 377.62, 0.0, 18.9, -32.12};
+         List<Double> d1 = new ArrayList<>();
+         for (double x:d) {d1.add(x); }
+
+         Collection<Integer> d2 = map(new Sign(),d1);
+         print(d2);
+
          // Assignment 5: Write code to test filter here
+
+         List<Integer> l1 = new ArrayList<Integer>();
+         l1.add(3);l1.add(-42);l1.add(88);l1.add(19);l1.add(-37);l1.add(0);l1.add(18);
+
+
+         System.out.println("----- IsEven -----");
+         Collection<Integer> l2 = filter2(new IsEven(), l1);
+         // Lamdbda testing
+         l2 = filter2(x -> x%2==0, l1);
+         //List<Integer>l3 = filter2(new IsEven(), l1);
+
+         print(l2); // [-42,88,0,18]
+
+
+
+
           /*
          ArrayList<Person> pl = new ArrayList<>();
          pl.add(new Person("Nisse","nisse@hipnet.moc","male",23));
@@ -87,7 +109,13 @@ public class Main {
          pl.add(new Person("Beda","beda@fishnet.cod","female",102));
         */
          // Assignment 6: Write code using lambdas here
+         BiFunction<Integer,Integer,Integer> plus = (x,y) -> x+y;
+         System.out.println(plus.apply(1,2));
+
+
     }
+
+
 
 
 }
