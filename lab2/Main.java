@@ -34,7 +34,7 @@ public class Main {
          campusLindholmen.add("Svea");
          campusLindholmen.add("Jupiter");
          print(campusLindholmen);
-         System.out.println("");
+         System.out.println("-----");
          reverse(campusLindholmen);
          print(campusLindholmen);
 
@@ -70,6 +70,7 @@ public class Main {
          List<String> johanneberg = Arrays.asList(str1);
          List<String> lindholmen = Arrays.asList(str2);
 
+         System.out.println("----- less -----");
          System.out.println(less(li1,li2,intcomp));
          System.out.println(less(li1,li3,intcomp));
          System.out.println(less(johanneberg,lindholmen,stringcomp));
@@ -81,6 +82,7 @@ public class Main {
          for (double x:d) {d1.add(x); }
 
          Collection<Integer> d2 = map(new Sign(),d1);
+         System.out.println("----- sign -----");
          print(d2);
 
          // Assignment 5: Write code to test filter here
@@ -99,8 +101,6 @@ public class Main {
 
 
 
-
-
          ArrayList<Person> pl = new ArrayList<>();
          pl.add(new Person("Nisse","nisse@hipnet.moc","male",23));
          pl.add(new Person("Lisa","lisa@shipnet.sea","female",67));
@@ -114,6 +114,7 @@ public class Main {
 
          Collection<Person> pResult = filter(x -> ((Person)x).getAge()>65&&((Person)x).getGender().equals("female"),pl);
          Collection<String> eMails = map(x -> ((Person)x).getEmail(), pResult);
+         System.out.println("----- Emails -----");
          print(eMails);
 
 

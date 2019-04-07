@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="300f180c-a569-442e-9ccf-4fdb570cc220" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collection/CollectionOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/CollectionOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/collection/CollectionOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/collection/CollectionOps.class" afterDir="false" />
-    </list>
+    <list default="true" id="300f180c-a569-442e-9ccf-4fdb570cc220" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
-              <caret line="117" column="21" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,7 +125,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554378219241" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554629958372" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -156,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.TestSingleBuffer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="lab2" />
@@ -173,8 +166,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestSingleBuffer" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +202,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32951653" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32951653" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34351146" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34351146" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994911" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -310,7 +303,7 @@
     <entry file="file://$PROJECT_DIR$/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
-          <caret line="117" column="21" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
