@@ -1,20 +1,15 @@
 public class SingleBuffer<T> {
 
-    private final int CAPACITY = 1;
     private T value = null;
-    private boolean hasValue;
 
     public SingleBuffer() {
-        //this.o = o;
-        hasValue = false;
     }
 
     public boolean put(T obj) {
         //condition for put
-        if (!hasValue) {
+        if (value==null) {
             this.value = obj;
-            hasValue = true;
-            return hasValue;
+            return true;
         }
         //failed
         else {
@@ -23,10 +18,11 @@ public class SingleBuffer<T> {
     }
 
     public T get() {
-        if(hasValue)
+        if(value!=null)
             {
-                hasValue=false;
-                return this.value;
+                T temp = this.value;
+                this.value=null;
+                return temp;
             }
         else
             {

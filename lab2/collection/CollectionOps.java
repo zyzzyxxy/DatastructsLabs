@@ -11,10 +11,15 @@ public class CollectionOps {
 
     public static <T> void print(Collection<T> l)
     {
-        for (T obj:l)
+        System.out.print("[");
+        Iterator<T> iterator = l.iterator();
+        while (iterator.hasNext())
         {
-            System.out.println(obj.toString());
+            System.out.print(iterator.next().toString());
+            if(iterator.hasNext())
+                System.out.print(", ");
         }
+        System.out.print("]\n");
     }
     public static <T> List<T> reverse(List<T> l)
     {
@@ -28,27 +33,9 @@ public class CollectionOps {
     // Put your code for less here ...
     public static <T> boolean less(Collection<T> c1, Collection<T> c2, Comparator<T> comp)
     {
-        Iterator<T> c1Iterator = c1.iterator();
-        Iterator<T> c2Iterator = c2.iterator();
-
-        T minC2 = c2Iterator.next();
-        //Hitta minsta objektet i c2
-        while (c2Iterator.hasNext())
-        {
-            T cCandidate = c2Iterator.next();
-            if(comp.compare(minC2,cCandidate) ==1)
-            {
-                minC2 = cCandidate;
-            }
-        }
-        //Jämför mot c1s objekt.
-        while (c1Iterator.hasNext())
-        {
-            if(comp.compare(minC2, c1Iterator.next()) !=1)
-                return false;
-
-        }
-       return true;
+        if(comp.compare(Collections.min(c2,comp),Collections.max(c1,comp))!=1)
+            return false;
+        return true;
     }
 
 
