@@ -5,7 +5,7 @@ public class TestSingleBuffer {
     public static void main(String[] args) throws IOException  {
         BufferedReader in  = new BufferedReader(new InputStreamReader(System.in));
 		
-
+        SingleBuffer<String> stringBuf = new SingleBuffer<String>();
         //  Define the object stringBuf of type SingleBuffer here...
 
 
