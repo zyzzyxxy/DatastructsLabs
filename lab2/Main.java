@@ -109,12 +109,16 @@ public class Main {
          pl.add(new Person("Beda","beda@fishnet.cod","female",102));
 
          // Assignment 6: Write code using lambdas here
+         //Bifunction test
+         System.out.println("----- bifunctionTest ------");
          BiFunction<Integer,Integer,Integer> plus = (x,y) -> x+y;
          System.out.println(plus.apply(1,2));
 
+         System.out.println("----- Emails -----");
+
+         //solution
          Collection<Person> pResult = filter(x -> ((Person)x).getAge()>65&&((Person)x).getGender().equals("female"),pl);
          Collection<String> eMails = map(x -> ((Person)x).getEmail(), pResult);
-         System.out.println("----- Emails -----");
          print(eMails);
 
 
